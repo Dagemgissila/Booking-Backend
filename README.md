@@ -1,7 +1,5 @@
 # 🏨 Booking System – Laravel Project
 
-A modern, clean, and fully functional Room/Hotel Booking System built with **Laravel 11**, **MySQL**, and optional **Tailwind/Bootstrap**.
-Perfect for hotels, guest houses, hostels, apartments, or any reservation-based business.
 
 ---
 
