@@ -39,7 +39,7 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::post('/logout', [AuthController::class, 'logout']);
     Route::get('/me', [AuthController::class, 'me']);
 
-
+        Route::post('/reservations', [ReservationController::class, 'store']);
     Route::middleware('role:admin')->group(function () {
         Route::post('/rooms', [RoomController::class, 'store']);
         Route::put('/rooms/{room}', [RoomController::class, 'update']);
@@ -47,7 +47,7 @@ Route::middleware('auth:sanctum')->group(function () {
         Route::get('/admin/reservations', [ReservationController::class, 'adminIndex']);
         Route::put('/reservations/{reservation}', [ReservationController::class, 'update']);
         Route::get('/admin/dashboard-stats', [DashboradController::class, 'stats']);
-        Route::post('/reservations', [ReservationController::class, 'store']);
+
     });
 
     // Reservations
